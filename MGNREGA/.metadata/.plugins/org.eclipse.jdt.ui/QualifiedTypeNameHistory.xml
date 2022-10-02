@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="com.mgnrega.utility.DbUtil"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.mgnrega.dao.MgnregaDaoImpl"/>
+    <fullyQualifiedTypeName name="com.mgnrega.dao.MgnregaDao"/>
+    <fullyQualifiedTypeName name="com.mgnrega.bean.Project"/>
+    <fullyQualifiedTypeName name="com.main.Gpm"/>
+    <fullyQualifiedTypeName name="com.mgnrega.bean.Employee"/>
+    <fullyQualifiedTypeName name="com.mgnrega.exceptions.MgnregaException"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+</qualifiedTypeNameHistroy>

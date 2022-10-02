@@ -1,0 +1,16 @@
+package com.mgnrega.dao;
+
+import java.util.List;
+
+import com.main.Gpm;
+import com.mgnrega.bean.Project;
+import com.mgnrega.exceptions.MgnregaException;
+
+public interface MgnregaDao {
+	public String insertIntoPorject(Project p1)throws MgnregaException;
+	public List<Project>  getAllProject() throws MgnregaException;
+	
+	
+	public String insertIntoGpm(Gpm g1)throws MgnregaException;
+	public List<Gpm> getAllGpm()throws MgnregaException;
+}

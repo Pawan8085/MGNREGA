@@ -1,0 +1,8 @@
+package com.mgnrega.dao;
+
+import com.mgnrega.bean.Project;
+import com.mgnrega.exceptions.MgnregaException;
+
+public interface MgnregaDao {
+	public String insertIntoPorject(Project p1)throws MgnregaException;
+}

@@ -1,0 +1,11 @@
+package com.mgnrega.dao;
+
+import java.util.List;
+
+import com.mgnrega.bean.Project;
+import com.mgnrega.exceptions.MgnregaException;
+
+public interface MgnregaDao {
+	public String insertIntoPorject(Project p1)throws MgnregaException;
+	public List<Project>  getAllProject() throws MgnregaException;
+}

@@ -1,0 +1,26 @@
+package com.main;
+
+import java.util.List;
+
+import com.mgnrega.bean.Project;
+import com.mgnrega.dao.MgnregaDao;
+import com.mgnrega.dao.MgnregaDaoImpl;
+import com.mgnrega.exceptions.MgnregaException;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MgnregaDao dao = new MgnregaDaoImpl();
+		
+		try {
+			List<Gpm> gpm = dao.getAllGpm();
+			gpm.forEach(g -> System.out.println(g));
+		} catch (MgnregaException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

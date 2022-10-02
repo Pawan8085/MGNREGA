@@ -1,0 +1,27 @@
+package com.main;
+
+import com.mgnrega.bean.Project;
+import com.mgnrega.dao.MgnregaDao;
+import com.mgnrega.dao.MgnregaDaoImpl;
+import com.mgnrega.exceptions.MgnregaException;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MgnregaDao dao = new MgnregaDaoImpl();
+		
+		Project p1 = new Project();
+		p1.setPid(1);
+		p1.setProjectName("Pr1");
+		
+		try {
+			String str = dao.insertIntoPorject(p1);
+			System.out.println(str);
+		} catch (MgnregaException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}
