@@ -20,7 +20,7 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter y if you want to login as BDO");
+		System.out.println("Enter y if you want to login as Block Development Officer");
 		String bdo = sc.next();
 		MgnregaDao dao = new MgnregaDaoImpl();
 		if(bdo.equals("y")) {
@@ -151,7 +151,8 @@ public class Main {
 					 check = true;
 					 Employee e1 = new Employee();
 					 System.out.println("Enter Employee Id");
-					 e1.setEid(sc.nextInt());
+					 int _eid=sc.nextInt();
+					 e1.setEid(_eid);
 					 System.out.println("Enter Employee Name");
 					 e1.setEmpName(sc.next());
 					 System.out.println("Enter Employee Wages");
@@ -160,21 +161,11 @@ public class Main {
 					 e1.setWorkingDays(sc.nextInt());
 					 String msg = dao.insertIntoEmployee(e1);
 					 System.out.println(msg);
+					 dao.allocateProject(prId, gId, _eid);
 					 System.out.println("___________________________________");
 				 }
 				if(check) {
-					List<Employee> employee = dao.getAllEmployee();
-					employee.forEach(e -> System.out.println(e));
 					
-					System.out.println("___________________________________________");
-					
-
-//					System.out.println("Project id :" +prId+"    "+"Gram Panchayat id :"+gId+"    "+"Project Name "+prName);
-					
-					
-					for(int i=0;i<employee.size();++i) {
-						dao.allocateProject(prId, gId, employee.get(i).getEid());
-					}
 					System.out.println(prName +" Project allocated to employees");
 					System.out.println("___________________________________________");
 					
@@ -199,6 +190,7 @@ public class Main {
 			} catch (MgnregaException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
+				
 			}
 		}
 	}
