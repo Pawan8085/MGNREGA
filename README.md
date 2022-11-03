@@ -19,7 +19,7 @@ Functionalities :-
 . Allocateing Project To The Employee And Inserting Into Database
 
 
-TECH STACKS :-
+TECH STACKS  :- 
 CORE JAVA
 SQL 
 JDBC
